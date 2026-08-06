@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>مِرسام — لوحة المقارنة / acceptance sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#121614;--panel:#1d2422;--line:#2f3b37;--txt:#e9e6dd;--txt2:#9ba8a2;--txt3:#6e7c76;--brass:#c8a44a}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font:14px/1.7 'Cairo',system-ui,sans-serif;padding:26px}
+h1{font-size:20px;margin:0 0 4px}
+h1 small{display:block;font-size:12px;color:var(--txt3);font-weight:400;margin-top:3px}
+h2{font-size:14px;margin:34px 0 12px;padding-bottom:7px;border-bottom:1px solid var(--line);color:var(--brass)}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:26px;align-items:start}
+.cell{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cell .cap{padding:8px 12px;font-size:11.5px;font-weight:700;color:var(--txt2);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:8px}
+.cell .cap em{font-style:normal;color:var(--txt3);font-weight:500}
+.cell img,.cell iframe{display:block;width:100%;border:0;background:#0d1211}
+.cell iframe{aspect-ratio:1080/1350;height:auto}
+.cell.a4 iframe{aspect-ratio:1240/1754}
+.note{background:rgba(200,164,74,.07);border:1px solid rgba(200,164,74,.25);border-radius:9px;padding:10px 13px;font-size:12.5px;color:#d9cfae;margin:0 0 18px;line-height:1.8}
+.legend{color:var(--txt3);font-size:12px;margin:0 0 22px}
+.old{filter:none}
+</style>
+</head>
+<body>
+
+<h1>لوحة المقارنة — مِرسام
+  <small>على اليمين البوستر الأصلي، وعلى اليسار إعادة بنائه داخل التطبيق من قالب جاهز دون أي تعديل يدوي على الشيفرة.</small>
+</h1>
+<p class="legend">Left = rebuilt live in the app from a template. Right = the original reference poster. Every piece of information on each original has a home in the rebuild.</p>
+
+<div class="note">
+  لماذا تبدو إعادة البناء مختلفة؟ الكحلي صار لون الحبر بدل أن يكون لوناً ثالثاً، والذهبي صار خطاً شعرياً بدل المعدن اللامع،
+  والزخارف كلها مرسومة هندسياً بدل الزخارف الجاهزة، وكل خلفية تنشر «حدود أمان» تلتزم بها العناصر — فتتفق الهوامش الأربعة.
+</div>
+
+<h2>١ — اللقاء الشهري · قالب «لقاء / محاضرة» · خلفية wave · لوحة gsc · تخطيط classic</h2>
+<div class="pair">
+  <div class="cell"><div class="cap"><span>مِرسام — إعادة البناء</span><em>lecture · wave · gsc</em></div>
+    <iframe src="index.html?demo=lecture&chrome=0" loading="lazy"></iframe></div>
+  <div class="cell"><div class="cap"><span>الأصلي</span><em>IMG_6349</em></div><img class="old" src="ref/IMG_6349.jpg" alt=""></div>
+</div>
+
+<h2>٢ — لقاء شهري بصورة المتحدث · قالب «لقاء بصورة» · تخطيط side-photo</h2>
+<div class="pair">
+  <div class="cell"><div class="cap"><span>مِرسام — إعادة البناء</span><em>speaker · wave · gsc</em></div>
+    <iframe src="index.html?demo=speaker&chrome=0" loading="lazy"></iframe></div>
+  <div class="cell"><div class="cap"><span>الأصلي</span><em>IMG_6350</em></div><img class="old" src="ref/IMG_6350.jpg" alt=""></div>
+</div>
+
+<h2>٣ — تهنئة عيد الأضحى · قالب «تهنئة عيد» · خلفية arch · لوحة emerald · تخطيط greeting</h2>
+<div class="pair">
+  <div class="cell"><div class="cap"><span>مِرسام — إعادة البناء</span><em>eid · arch · emerald</em></div>
+    <iframe src="index.html?demo=eid&chrome=0" loading="lazy"></iframe></div>
+  <div class="cell"><div class="cap"><span>الأصلي</span><em>IMG_6351</em></div><img class="old" src="ref/IMG_6351.jpg" alt=""></div>
+</div>
+
+<h2>٤ — صكوك الأضاحي · قالب «إعلان صكوك» · خلفية banner · تخطيط offer</h2>
+<div class="pair">
+  <div class="cell"><div class="cap"><span>مِرسام — إعادة البناء</span><em>voucher · banner · gsc</em></div>
+    <iframe src="index.html?demo=voucher&chrome=0" loading="lazy"></iframe></div>
+  <div class="cell"><div class="cap"><span>الأصلي</span><em>IMG_6352</em></div><img class="old" src="ref/IMG_6352.jpg" alt=""></div>
+</div>
+
+<h2>معالجتان بديلتان للبوستر الأول — من الطبقة الثانية من الخلفيات</h2>
+<p class="legend">نفس المحتوى تماماً، لكن باتجاهين لم يسبق للجنة استخدامهما. لا شيء هنا يحتاج مصمماً — كلاهما ضغطتان في التطبيق.</p>
+<div class="pair">
+  <div class="cell"><div class="cap"><span>بديل أ — حقل داكن</span><em>inverted · bone</em></div>
+    <iframe src="index.html?demo=lecture&bg=inverted&pal=bone&font=modern&chrome=0" loading="lazy"></iframe></div>
+  <div class="cell"><div class="cap"><span>بديل ب — شبكة خطوط</span><em>rule-grid · charcoal</em></div>
+    <iframe src="index.html?demo=lecture&bg=rule-grid&pal=charcoal&font=modern&lay=meta-first&chrome=0" loading="lazy"></iframe></div>
+</div>
+
+<h2>عيّنة من نطاق الخلفيات — نفس المحتوى، ست معالجات</h2>
+<div class="pair" style="grid-template-columns:repeat(3,1fr)">
+  <div class="cell"><div class="cap"><span>mashrabiya</span><em>navy</em></div><iframe src="index.html?demo=lecture&bg=mashrabiya&pal=navy&chrome=0" loading="lazy"></iframe></div>
+  <div class="cell"><div class="cap"><span>negative-arch</span><em>royal</em></div><iframe src="index.html?demo=lecture&bg=negative-arch&pal=royal&lay=centered-minimal&chrome=0" loading="lazy"></iframe></div>
+  <div class="cell"><div class="cap"><span>kufic</span><em>olive</em></div><iframe src="index.html?demo=lecture&bg=kufic&pal=olive&chrome=0" loading="lazy"></iframe></div>
+</div>
+<div class="pair" style="grid-template-columns:repeat(3,1fr)">
+  <div class="cell"><div class="cap"><span>zellige</span><em>emerald</em></div><iframe src="index.html?demo=lecture&bg=zellige&pal=emerald&chrome=0" loading="lazy"></iframe></div>
+  <div class="cell"><div class="cap"><span>edge-wash</span><em>maroon</em></div><iframe src="index.html?demo=lecture&bg=edge-wash&pal=maroon&lay=centered-minimal&chrome=0" loading="lazy"></iframe></div>
+  <div class="cell"><div class="cap"><span>radial-rosette</span><em>teal</em></div><iframe src="index.html?demo=lecture&bg=radial-rosette&pal=teal&chrome=0" loading="lazy"></iframe></div>
+</div>
+
+</body>
+</html>

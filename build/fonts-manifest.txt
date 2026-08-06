@@ -1,0 +1,23 @@
+Cairo | 400 900 | arabic | 30712 | 40952
+Cairo | 400 900 | latin | 33644 | 44860
+Reem Kufi | 400 700 | arabic | 12324 | 16432
+Reem Kufi | 400 700 | latin | 20356 | 27144
+Noto Kufi Arabic | 400 900 | arabic | 123796 | 165064
+Noto Kufi Arabic | 400 900 | latin | 30720 | 40960
+Tajawal | 400 | arabic | 8916 | 11888
+Tajawal | 400 | latin | 10228 | 13640
+Tajawal | 500 | arabic | 8868 | 11824
+Tajawal | 500 | latin | 9868 | 13160
+Tajawal | 700 | arabic | 9040 | 12056
+Tajawal | 700 | latin | 9988 | 13320
+Tajawal | 900 | arabic | 8696 | 11596
+Tajawal | 900 | latin | 10204 | 13608
+Amiri | 400 | arabic | 108492 | 144656
+Amiri | 400 | latin | 19572 | 26096
+Amiri | 700 | arabic | 100024 | 133368
+Amiri | 700 | latin | 20284 | 27048
+Aref Ruqaa | 400 | arabic | 38116 | 50824
+Aref Ruqaa | 400 | latin | 14628 | 19504
+Aref Ruqaa | 700 | arabic | 45948 | 61264
+Aref Ruqaa | 700 | latin | 14468 | 19292
+TOTAL CSS bytes | 931043

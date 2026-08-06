@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>crest lab</title>
+<style>body{background:#f6f6f6;margin:20px;font-family:sans-serif}div{display:inline-block;vertical-align:top;margin-right:16px}</style></head>
+<body>
+<div id="out"></div>
+<script>
+function crest(size, colors) {
+  const [BLUE, YELLOW, GREEN, W] = colors || ['#1D3FA8', '#FFD200', '#007A4B', '#FFFFFF'];
+  const diamond = `M224 10 L438 224 L224 438 L10 224 Z`;
+  const x0 = 150, x1 = 298;
+  /* skeleton centrelines; fat letter = thick white stroke, contour = thinner
+     band-colour overlay. Miter joins give the 45° crest corners for free. */
+  const S = 'M268 91 L224 47 L180 91 L180 224 L268 224 L268 357 L224 401 L180 357';
+  const G = 'M125 133 L52 224 L125 315 L125 211';
+  const GBAR = 'M125 211 L88 211';
+  const C = 'M323 133 L396 224 L323 315 L323 211';
+  const triL = 'M32 208 L12 224 L32 240 Z';
+  const triR = 'M416 208 L436 224 L416 240 Z';
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 448" width="${size}" height="${size}">
+    <defs><clipPath id="dmx"><path d="${diamond}"/></clipPath></defs>
+    <g clip-path="url(#dmx)">
+      <rect x="0" y="0" width="${x0}" height="448" fill="${BLUE}"/>
+      <rect x="${x0}" y="0" width="${x1 - x0}" height="448" fill="${YELLOW}"/>
+      <rect x="${x1}" y="0" width="${448 - x1}" height="448" fill="${GREEN}"/>
+    </g>
+    <g fill="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="8">
+      <path d="${S}" stroke="${W}" stroke-width="30"/>
+      <path d="${S}" stroke="${YELLOW}" stroke-width="16"/>
+      <path d="${G}" stroke="${W}" stroke-width="26"/>
+      <path d="${G}" stroke="${BLUE}" stroke-width="13"/>
+      <path d="${GBAR}" stroke="${W}" stroke-width="26"/>
+      <path d="${GBAR}" stroke="${BLUE}" stroke-width="13"/>
+      <path d="${C}" stroke="${W}" stroke-width="26"/>
+      <path d="${C}" stroke="${GREEN}" stroke-width="13"/>
+    </g>
+    <path d="${triL}" fill="${W}"/>
+    <path d="${triR}" fill="${W}"/>
+  </svg>`;
+}
+document.getElementById('out').innerHTML =
+  crest(446) + crest(120) + crest(56) +
+  '<br>' + crest(300, ['#12395F', '#B4862B', '#0C4A2E', '#F1E7DD']);
+</script>
+</body></html>

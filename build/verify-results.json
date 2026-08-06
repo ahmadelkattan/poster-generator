@@ -1,0 +1,311 @@
+{
+ "exports": [
+  {
+   "file": "/Users/ahmadelkattan/Poster-Generator/build/exports/poster-x1.png",
+   "scale": 1,
+   "fmt": "png",
+   "bytes": 160964,
+   "size": "1080x1350",
+   "minLum": 32,
+   "maxLum": 249,
+   "stdev": 67.4,
+   "verdict": "OK"
+  },
+  {
+   "file": "/Users/ahmadelkattan/Poster-Generator/build/exports/poster-x2.png",
+   "scale": 2,
+   "fmt": "png",
+   "bytes": 380131,
+   "size": "2160x2700",
+   "minLum": 34,
+   "maxLum": 249,
+   "stdev": 67.3,
+   "verdict": "OK"
+  },
+  {
+   "file": "/Users/ahmadelkattan/Poster-Generator/build/exports/poster-x3.png",
+   "scale": 3,
+   "fmt": "png",
+   "bytes": 654284,
+   "size": "3240x4050",
+   "minLum": 35,
+   "maxLum": 248,
+   "stdev": 67.2,
+   "verdict": "OK"
+  },
+  {
+   "file": "/Users/ahmadelkattan/Poster-Generator/build/exports/poster-x2.jpg",
+   "scale": 2,
+   "fmt": "jpg",
+   "bytes": 334094,
+   "size": "2160x2700",
+   "minLum": 34,
+   "maxLum": 249,
+   "stdev": 67.3,
+   "verdict": "OK"
+  }
+ ],
+ "cycle": {
+  "states": 1282,
+  "failCount": 21,
+  "fails": [
+   "rnd lay:boxed-meta #7 :: 2 colliding",
+   "rnd lay:greeting #9 :: 2 colliding",
+   "rnd bg:zellige #10 :: 2 colliding",
+   "rnd lay:meta-first #11 :: 2 colliding",
+   "rnd bg:edge-wash #32 :: 2 colliding",
+   "rnd lay:classic #33 :: 4 colliding",
+   "rnd bg:mashrabiya #34 :: 2 colliding",
+   "rnd bg:skyline #38 :: 2 colliding",
+   "rnd lay:two-col #39 :: 2 colliding",
+   "rnd lay:meta-first #41 :: 2 colliding",
+   "rnd bg:inverted #47 :: 2 colliding",
+   "rnd bg:geo #48 :: 4 colliding",
+   "rnd lay:greeting #49 :: 2 colliding",
+   "rnd bg:mashrabiya #51 :: 2 colliding",
+   "rnd bg:arch #52 :: 2 colliding",
+   "rnd lay:boxed-meta #77 :: 2 colliding",
+   "rnd lay:classic #78 :: 4 colliding",
+   "rnd bg:geo #79 :: 4 colliding",
+   "rnd bg:skyline #80 :: 4 colliding",
+   "rnd lay:two-col #81 :: 2 colliding",
+   "rnd lay:two-col #82 :: 2 colliding"
+  ]
+ },
+ "contrast": {
+  "rows": [
+   {
+    "name": "body base",
+    "px": 16,
+    "bold": false,
+    "large": false,
+    "ratio": 12.13,
+    "fg": "rgb(32, 40, 46)",
+    "bg": "rgb(235,231,223)"
+   },
+   {
+    "name": "section header",
+    "px": 15,
+    "bold": true,
+    "large": false,
+    "ratio": 8.83,
+    "fg": "rgb(61, 72, 80)",
+    "bg": "rgb(250,248,244)"
+   },
+   {
+    "name": "field label",
+    "px": 15,
+    "bold": true,
+    "large": false,
+    "ratio": 8.83,
+    "fg": "rgb(61, 72, 80)",
+    "bg": "rgb(250,248,244)"
+   },
+   {
+    "name": "hint text",
+    "px": 14,
+    "bold": false,
+    "large": false,
+    "ratio": 6.89,
+    "fg": "rgb(76, 88, 96)",
+    "bg": "rgb(250,248,244)"
+   },
+   {
+    "name": "button",
+    "px": 15,
+    "bold": true,
+    "large": false,
+    "ratio": 14.95,
+    "fg": "rgb(32, 40, 46)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "name": "primary button",
+    "px": 15,
+    "bold": true,
+    "large": false,
+    "ratio": 17.49,
+    "fg": "rgb(26, 18, 4)",
+    "bg": "rgb(250,248,244)"
+   },
+   {
+    "name": "step label (on)",
+    "px": 14,
+    "bold": true,
+    "large": false,
+    "ratio": 12.91,
+    "fg": "rgb(32, 40, 46)",
+    "bg": "rgb(241,238,231)"
+   },
+   {
+    "name": "step label (off)",
+    "px": 14,
+    "bold": true,
+    "large": false,
+    "ratio": 8.09,
+    "fg": "rgb(61, 72, 80)",
+    "bg": "rgb(241,238,231)"
+   },
+   {
+    "name": "step number (on)",
+    "px": 15,
+    "bold": true,
+    "large": false,
+    "ratio": 7.85,
+    "fg": "rgb(26, 18, 4)",
+    "bg": "rgb(201,164,74)"
+   },
+   {
+    "name": "tab (on)",
+    "px": 15,
+    "bold": true,
+    "large": false,
+    "ratio": 14.95,
+    "fg": "rgb(32, 40, 46)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "name": "tab (off)",
+    "px": 15,
+    "bold": true,
+    "large": false,
+    "ratio": 8.09,
+    "fg": "rgb(61, 72, 80)",
+    "bg": "rgb(241,238,231)"
+   },
+   {
+    "name": "chip",
+    "px": 15,
+    "bold": false,
+    "large": false,
+    "ratio": 9.37,
+    "fg": "rgb(61, 72, 80)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "name": "card caption",
+    "px": 13,
+    "bold": true,
+    "large": false,
+    "ratio": 14.1,
+    "fg": "rgb(32, 40, 46)",
+    "bg": "rgb(250,248,244)"
+   },
+   {
+    "name": "zoom value",
+    "px": 15,
+    "bold": true,
+    "large": false,
+    "ratio": 8.83,
+    "fg": "rgb(61, 72, 80)",
+    "bg": "rgb(250,248,244)"
+   },
+   {
+    "name": "zoom button",
+    "px": 16,
+    "bold": true,
+    "large": false,
+    "ratio": 8.83,
+    "fg": "rgb(61, 72, 80)",
+    "bg": "rgb(250,248,244)"
+   },
+   {
+    "name": "switch label",
+    "px": 15,
+    "bold": true,
+    "large": false,
+    "ratio": 8.83,
+    "fg": "rgb(61, 72, 80)",
+    "bg": "rgb(250,248,244)"
+   },
+   {
+    "name": "fit chip ok",
+    "px": 13.5,
+    "bold": true,
+    "large": false,
+    "ratio": 6.72,
+    "fg": "rgb(15, 92, 64)",
+    "bg": "rgb(223,239,231)"
+   },
+   {
+    "name": "field badge",
+    "px": 15,
+    "bold": true,
+    "large": false,
+    "ratio": 8.23,
+    "fg": "rgb(255, 255, 255)",
+    "bg": "rgb(11,90,65)"
+   },
+   {
+    "name": "group heading",
+    "px": 15.5,
+    "bold": true,
+    "large": false,
+    "ratio": 14.95,
+    "fg": "rgb(32, 40, 46)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "name": "textarea text",
+    "px": 16,
+    "bold": false,
+    "large": false,
+    "ratio": 14.95,
+    "fg": "rgb(32, 40, 46)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "name": "topbar ghost button",
+    "px": 15,
+    "bold": true,
+    "large": false,
+    "ratio": 8.83,
+    "fg": "rgb(61, 72, 80)",
+    "bg": "rgb(250,248,244)"
+   },
+   {
+    "name": "layer name",
+    "px": 15,
+    "bold": false,
+    "large": false,
+    "ratio": 9.37,
+    "fg": "rgb(61, 72, 80)",
+    "bg": "rgb(255,255,255)"
+   },
+   {
+    "name": "layer type badge",
+    "px": 12,
+    "bold": true,
+    "large": false,
+    "ratio": 6.31,
+    "fg": "rgb(76, 88, 96)",
+    "bg": "rgb(241,238,231)"
+   },
+   {
+    "name": "empty-state text",
+    "px": 15,
+    "bold": false,
+    "large": false,
+    "ratio": 6.89,
+    "fg": "rgb(76, 88, 96)",
+    "bg": "rgb(250,248,244)"
+   }
+  ],
+  "worst": {
+   "name": "layer type badge",
+   "px": 12,
+   "bold": true,
+   "large": false,
+   "ratio": 6.31,
+   "fg": "rgb(76, 88, 96)",
+   "bg": "rgb(241,238,231)"
+  },
+  "minPx": 12
+ },
+ "netRequests": [],
+ "boot": {
+  "h2c": "function",
+  "els": 9,
+  "fonts": 10
+ }
+}

@@ -1748,15 +1748,26 @@ const archD = (w, h) => `M0 ${r2(.6633 * h)}A${r2(.69 * w)} ${r2(.69 * h)} 0 0 1
 const GSC_CREST = () => {
   const BLUE = '#1D3FA8', YELLOW = '#FFD200', GREEN = '#007A4B', W = '#FFFFFF';
   const uid2 = 'cr' + Math.random().toString(36).slice(2, 7);
+  /* The three colour zones are NOT straight vertical stripes — the yellow
+     field is a pinched hexagonal lens that reaches the diamond's own top and
+     bottom vertices, with blue and green filling the kite-shaped zones each
+     side of it (reaching the left and right vertices respectively). This is
+     what makes the crest read as a diamond with a coloured lens inside it,
+     not three coloured bars clipped to a diamond outline. */
+  const T = '224 10', R = '438 224', B = '224 438', L = '10 224';
+  const SLt = '156 130', SRt = '292 130', SLb = '156 318', SRb = '292 318';
+  const yellowPath = `M${T} L${SRt} L${SRb} L${B} L${SLb} L${SLt} Z`;
+  const bluePath   = `M${T} L${SLt} L${SLb} L${B} L${L} Z`;
+  const greenPath  = `M${T} L${SRt} L${SRb} L${B} L${R} Z`;
   const S = 'M268 91 L224 47 L180 91 L180 224 L268 224 L268 357 L224 401 L180 357';
   const G = 'M125 133 L52 224 L125 315 L125 211', GBAR = 'M125 211 L88 211';
   const Cc = 'M323 133 L396 224 L323 315 L323 211';
   return `<svg ${SVGNS} viewBox="0 0 448 448" style="width:100%;height:100%;display:block">
     <defs><clipPath id="${uid2}"><path d="M224 10 L438 224 L224 438 L10 224 Z"/></clipPath></defs>
     <g clip-path="url(#${uid2})">
-      <rect x="0" y="0" width="150" height="448" fill="${BLUE}"/>
-      <rect x="150" y="0" width="148" height="448" fill="${YELLOW}"/>
-      <rect x="298" y="0" width="150" height="448" fill="${GREEN}"/>
+      <path d="${bluePath}" fill="${BLUE}"/>
+      <path d="${yellowPath}" fill="${YELLOW}"/>
+      <path d="${greenPath}" fill="${GREEN}"/>
     </g>
     <g fill="none" stroke="${W}" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="8">
       <path d="${S}" stroke-width="30"/>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>crest lab 2</title>
+<style>body{background:#f0ece2;margin:20px;font-family:sans-serif}div{display:inline-block;vertical-align:top;margin-right:24px;text-align:center}</style></head>
+<body>
+<div id="out"></div>
+<script>
+function crest(size) {
+  const BLUE = '#1D3FA8', YELLOW = '#FFD200', GREEN = '#007A4B', W = '#FFFFFF';
+  // diamond vertices
+  const T = [224, 10], R = [438, 224], B = [224, 438], L = [10, 224];
+  // yellow hexagon shoulder points — where blue/yellow/green boundaries turn from
+  // diagonal (following the diamond's own edge) to vertical
+  const hw = 68;          // half-width of the yellow lens at its shoulders
+  const sy1 = 130, sy2 = 318;  // shoulder heights
+  const SLt = [224 - hw, sy1], SRt = [224 + hw, sy1];
+  const SLb = [224 - hw, sy2], SRb = [224 + hw, sy2];
+  const pt = p => p.join(' ');
+  const yellowPath = `M${pt(T)} L${pt(SRt)} L${pt(SRb)} L${pt(B)} L${pt(SLb)} L${pt(SLt)} Z`;
+  const bluePath   = `M${pt(T)} L${pt(SLt)} L${pt(SLb)} L${pt(B)} L${pt(L)} Z`;
+  const greenPath  = `M${pt(T)} L${pt(SRt)} L${pt(SRb)} L${pt(B)} L${pt(R)} Z`;
+
+  const S = 'M268 91 L224 47 L180 91 L180 224 L268 224 L268 357 L224 401 L180 357';
+  const G = 'M125 133 L52 224 L125 315 L125 211', GBAR = 'M125 211 L88 211';
+  const Cc = 'M323 133 L396 224 L323 315 L323 211';
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 448" width="${size}" height="${size}">
+    <defs><clipPath id="dmx${size}"><path d="M224 10 L438 224 L224 438 L10 224 Z"/></clipPath></defs>
+    <g clip-path="url(#dmx${size})">
+      <path d="${bluePath}" fill="${BLUE}"/>
+      <path d="${yellowPath}" fill="${YELLOW}"/>
+      <path d="${greenPath}" fill="${GREEN}"/>
+    </g>
+    <g fill="none" stroke="${W}" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="8">
+      <path d="${S}" stroke-width="30"/>
+      <path d="${G}" stroke-width="26"/>
+      <path d="${GBAR}" stroke-width="26"/>
+      <path d="${Cc}" stroke-width="26"/>
+    </g>
+    <path d="M32 208 L12 224 L32 240 Z" fill="${W}"/>
+    <path d="M416 208 L436 224 L416 240 Z" fill="${W}"/>
+  </svg>`;
+}
+document.getElementById('out').innerHTML =
+  '<div>' + crest(360) + '<div>hexagon zones</div></div>';
+</script>
+</body></html>
